@@ -355,7 +355,7 @@ ul {
 
 .we-offer-area .item {
     background: #ffffff none repeat scroll 0 0;
-    border-left: 2px solid #00a01d;
+    border-left: 2px solid #000;
     -moz-box-shadow: 0 0 10px #cccccc;
     -webkit-box-shadow: 0 0 10px #cccccc;
     -o-box-shadow: 0 0 10px #cccccc;
@@ -542,6 +542,23 @@ ul {
     padding: 10px;
     width: 70%;
 }
+.vision .item {
+    background: #ffffff none repeat scroll 0 0;
+    border-left: 2px solid #000;
+    -moz-box-shadow: 0 0 10px #cccccc;
+    -webkit-box-shadow: 0 0 10px #cccccc;
+    -o-box-shadow: 0 0 10px #cccccc;
+    box-shadow: 0 0 10px #cccccc;
+    overflow: hidden;
+    padding: 30px;
+    position: relative;
+    z-index: 1;
+}
+
+.mission.item {
+    border-right: 2px solid #000;
+    border-left: none;
+}
 
 .visionMission-section h1 {
     margin: 0 10px 30px;
@@ -656,10 +673,9 @@ ul {
     background: #fff;
     padding: 30px 20px;
     text-align: center;
-    border: 2px solid #0c0c0c;
+    border: 2px solid #ff25fb;
     margin: 0 0 28px;
     transition: all 0.5s linear;
-
 }
 
 .our-team .cnt-block figure {
@@ -721,13 +737,16 @@ ul {
 
 
 section.contact-us {
+    background: #00a01d;
     background-image: url(../images/meetings-bg.jpg);
     background-position: center center;
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 140px 0px 0px 0px;
+    padding: 0;
+    margin: 0;
     color: #000;
+
   }
   
   section.contact-us #contact {
