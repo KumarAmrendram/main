@@ -903,7 +903,7 @@ section.contact-us .right-info ul li span {
 
 /* popup */
 #popup {
-    /* display: none; */
+    display: none;
     position: fixed;
     top: 0;
     left: 0;
@@ -928,7 +928,7 @@ section.contact-us .right-info ul li span {
     padding: 20px;
     border-radius: 5px;
     text-align: center;
-    box-shadow: 2px 3px 5px red;
+    box-shadow: 2px 3px 5px #690b58;
   }
 
 #popup-content::before {
@@ -942,6 +942,11 @@ section.contact-us .right-info ul li span {
     filter: blur(10px); /* control the blur */
 }
 
+
+#popup:hover {
+    
+}
+
   #close-icon {
     position: absolute;
     top: 10px;
@@ -953,5 +958,5 @@ section.contact-us .right-info ul li span {
 .email:hover {
     transition: all 0.3s linear;
     color: #520127;
-
 }
+
