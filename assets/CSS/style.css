@@ -1,14 +1,37 @@
-* {
+*, a, ul, li  {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
     font-family: 'Roboto Slab', serif;
+    color: inherit;
 }
+
+
+
+
+body {
+    background: rgb(101, 84, 175);
+    background: -moz-radial-gradient(circle, rgba(101, 84, 175, 1) 0%, rgba(233, 102, 160, 1) 50%, rgba(43, 39, 48, 1) 100%);
+    background: -webkit-radial-gradient(circle, rgba(101, 84, 175, 1) 0%, rgba(233, 102, 160, 1) 50%, rgba(43, 39, 48, 1) 100%);
+    background: radial-gradient(circle, rgba(101, 84, 175, 1) 0%, rgba(233, 102, 160, 1) 50%, rgba(43, 39, 48, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#6554af", endColorstr="#2b2730", GradientType=1);
+}
+
+section {
+    margin: 10px 0;
+    /* border: 2px solid salmon; */
+}
+
 
 .flexMain {
     display: flex;
-    align-items: center
+    align-items: center;
+    background: rgb(234, 131, 176);
+    background: -moz-radial-gradient(circle, rgba(234, 131, 176, 1) 0%, rgba(83, 2, 100, 1) 100%);
+    background: -webkit-radial-gradient(circle, rgba(234, 131, 176, 1) 0%, rgba(83, 2, 100, 1) 100%);
+    background: radial-gradient(circle, rgba(234, 131, 176, 1) 0%, rgba(83, 2, 100, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ea83b0", endColorstr="#530264", GradientType=1);
 }
 
 .flex1 {
@@ -32,7 +55,7 @@ button.siteLink {
 }
 
 .whiteLink {
-    background: #fff;
+    background: transparent;
 }
 
 .whiteLink:active {
@@ -42,7 +65,7 @@ button.siteLink {
 
 .blackLink {
     color: #fff;
-    background: #232323;
+    background: transparent;
     transition: all 300ms linear;
 }
 
@@ -132,7 +155,7 @@ select.noStyle {
 
 .about-section .content-column .text {
     position: relative;
-    color: #777777;
+    color: #ffffff;
     font-size: 15px;
     line-height: 2em;
     margin-bottom: 20px;
@@ -281,22 +304,9 @@ select.noStyle {
 
 /* services section */
 
-a,
-a:hover,
-a:focus,
-a:active {
-    text-decoration: none;
-    outline: none;
-}
-
-ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-}
 
 .bg-gray {
-    background-color: #f9f9f9;
+    background-color: transparent;
 }
 
 .site-heading h1 {
@@ -542,6 +552,7 @@ ul {
     padding: 10px;
     width: 70%;
 }
+
 .vision .item {
     background: #ffffff none repeat scroll 0 0;
     border-left: 2px solid #000;
@@ -662,11 +673,6 @@ ul {
 }
 
 
-.our-team {
-    background: #111;
-
-}
-
 .our-team .cnt-block {
     float: left;
     width: 100%;
@@ -737,25 +743,28 @@ ul {
 
 
 section.contact-us {
-    background: #00a01d;
     background-image: url(../images/meetings-bg.jpg);
     background-position: center center;
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 0;
-    margin: 0;
+    margin: 7%;
     color: #000;
 
-  }
-  
-  section.contact-us #contact {
+}
+
+section.contact-us #contact {
     background-color: #fff;
     border-radius: 20px;
     padding: 40px;
-  }
-  
-  section.contact-us #contact h2 {
+    background: rgb(234, 131, 176);
+    background: -moz-radial-gradient(circle, rgba(234, 131, 176, 1) 0%, rgba(83, 2, 100, 1) 100%);
+    background: -webkit-radial-gradient(circle, rgba(234, 131, 176, 1) 0%, rgba(83, 2, 100, 1) 100%);
+    background: radial-gradient(circle, rgba(234, 131, 176, 1) 0%, rgba(83, 2, 100, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ea83b0", endColorstr="#530264", GradientType=1);
+}
+
+section.contact-us #contact h2 {
     text-transform: uppercase;
     color: #1f272b;
     border-bottom: 1px solid #eee;
@@ -763,9 +772,9 @@ section.contact-us {
     padding-bottom: 20px;
     font-size: 22px;
     font-weight: 700;
-  }
-  
-  section.contact-us #contact input {
+}
+
+section.contact-us #contact input {
     width: 100%;
     height: 40px;
     border-radius: 20px;
@@ -778,9 +787,9 @@ section.contact-us {
     color: #7a7a7a;
     padding: 0px 15px;
     margin-bottom: 30px;
-  }
-  
-  section.contact-us #contact textarea {
+}
+
+section.contact-us #contact textarea {
     width: 100%;
     min-height: 140px;
     max-height: 180px;
@@ -794,13 +803,13 @@ section.contact-us {
     color: #7a7a7a;
     padding: 15px;
     margin-bottom: 30px;
-  }
-  
-  section.contact-us #contact button {
+}
+
+section.contact-us #contact button {
     font-size: 13px;
     /* color: #fff; */
-    background: radial-gradient(circle, rgba(249,38,130,1) 0%, rgba(255,59,106,1) 100%);
-      padding: 12px 30px;
+    background: radial-gradient(circle, rgba(249, 38, 130, 1) 0%, rgba(255, 59, 106, 1) 100%);
+    padding: 12px 30px;
     display: inline-block;
     border-radius: 22px;
     font-weight: 500;
@@ -808,59 +817,64 @@ section.contact-us {
     transition: all 0.3s;
     border: none;
     outline: none;
-  }
-  
-  section.contact-us #contact button:hover {
+}
+
+section.contact-us #contact button:hover {
     opacity: 0.9;
-  }
-  
-  section.contact-us .right-info {
-   background: #000;
+}
+
+section.contact-us .right-info {
+    background: #000;
     border-radius: 20px;
-    padding: 40px;
+    padding: 100px 60px;
     color: #fff;
-  }
-  
-  section.contact-us .right-info ul li {
+    background: rgb(234, 131, 176);
+    background: -moz-radial-gradient(circle, rgba(234, 131, 176, 1) 0%, rgba(83, 2, 100, 1) 100%);
+    background: -webkit-radial-gradient(circle, rgba(234, 131, 176, 1) 0%, rgba(83, 2, 100, 1) 100%);
+    background: radial-gradient(circle, rgba(234, 131, 176, 1) 0%, rgba(83, 2, 100, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ea83b0", endColorstr="#530264", GradientType=1);
+}
+
+section.contact-us .right-info ul li {
     display: inline-block;
     border-bottom: 1px solid rgba(250, 250, 250, 0.15);
     margin-bottom: 30px;
     padding-bottom: 30px;
-  }
-  
-  section.contact-us .right-info ul li:last-child {
+}
+
+section.contact-us .right-info ul li:last-child {
     margin-bottom: 0;
     padding-bottom: 0;
     border-bottom: none;
-  }
-  
-  section.contact-us .right-info ul li h6 {
+}
+
+section.contact-us .right-info ul li h6 {
     /* color: #fff; */
     font-size: 15px;
     font-weight: 600;
     margin-bottom: 10px;
-  }
-  
-  section.contact-us .right-info ul li span {
+}
+
+section.contact-us .right-info ul li span {
     display: block;
     font-size: 18px;
     /* color: #fff; */
     font-weight: 700;
-  }
-  
-  .footer {
+}
+
+.footer {
     text-align: center;
-    margin-top: 140px;
+    margin-top: 1.1rem;
     border-top: 1px solid rgba(250, 250, 250, 0.15);
-    padding: 50px 0px;
-  }
-  .footer p {
+    padding: 50px 0 0px 0px;
+}
+
+.footer p {
     text-transform: uppercase;
     font-size: 14px;
     /* color: #fff; */
-  }
-  
-  .footer p a {
+}
+
+.footer p a {
     color: #f5a425;
-  }
-  
+}
