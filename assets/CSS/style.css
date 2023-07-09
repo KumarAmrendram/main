@@ -949,3 +949,9 @@ section.contact-us .right-info ul li span {
     font-size: 20px;
     cursor: pointer;
   }
+
+.email:hover {
+    transition: all 0.3s linear;
+    color: #f47cb4;
+
+}
