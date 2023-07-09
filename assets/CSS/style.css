@@ -557,7 +557,14 @@ select.noStyle {
 
 .vision .item {
     background: #ffffff none repeat scroll 0 0;
-    border-left: 2px solid #000;
+    border-width: 5px;
+    border-style: solid;
+    border-image: 
+    linear-gradient(
+      to bottom, 
+      rgb(162, 42, 176), 
+      rgba(0, 0, 0, 0)
+    ) 1 100%;
     -moz-box-shadow: 0 0 10px #cccccc;
     -webkit-box-shadow: 0 0 10px #cccccc;
     -o-box-shadow: 0 0 10px #cccccc;
@@ -569,8 +576,15 @@ select.noStyle {
 }
 
 .mission.item {
-    border-right: 2px solid #000;
-    border-left: none;
+    border-width: 5px;
+    border-style: solid;
+    border-image: 
+    linear-gradient(
+      to bottom, 
+      rgba(0, 0, 0, 0),
+      rgb(162, 42, 176) 
+
+    ) 1 100%;
 }
 
 .visionMission-section h1 {
@@ -836,6 +850,12 @@ section.contact-us .right-info {
     background: -webkit-radial-gradient(circle, rgba(234, 131, 176, 1) 0%, rgba(83, 2, 100, 1) 100%);
     background: radial-gradient(circle, rgba(234, 131, 176, 1) 0%, rgba(83, 2, 100, 1) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ea83b0", endColorstr="#530264", GradientType=1);
+}
+
+@media (max-width:768px){
+    section.contact-us .right-info {
+        /* padding: 50px 10px; */
+    }
 }
 
 section.contact-us .right-info ul li {
