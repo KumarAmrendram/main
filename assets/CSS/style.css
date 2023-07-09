@@ -278,12 +278,14 @@ select.noStyle {
 
 .sec-title {
     position: relative;
-    padding-bottom: 40px;
+    padding-bottom: 0px;
 }
 
 .sec-title .title {
     position: relative;
-    color: #d7a449;
+    /* background: -webkit-linear-gradient(#a00c94, #cbb5c2);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; */
     font-size: 18px;
     font-weight: 700;
     padding-right: 50px;
@@ -340,7 +342,7 @@ select.noStyle {
 }
 
 .site-heading {
-    margin-bottom: 60px;
+    margin-bottom: 1.5rem;
     overflow: hidden;
     margin-top: -5px;
 }
@@ -663,7 +665,7 @@ ul {
 }
 
 .practice-area .inner p {
-    font-size: 14px;
+    font-size: 1rem;
     line-height: 22px;
     font-weight: 400;
 }
@@ -702,7 +704,7 @@ ul {
     color: #2a2a2a;
     font-size: 20px;
     font-weight: 500;
-    padding: 6px 0;
+    /* padding: 6px 0; */
     text-transform: uppercase;
 }
 
@@ -719,6 +721,7 @@ ul {
     color: #2a2a2a;
     font-size: 13px;
     line-height: 20px;
+    margin: 0;
     font-weight: 400;
 }
 
