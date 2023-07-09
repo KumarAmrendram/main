@@ -6,6 +6,6 @@ function menuToggle() {
 }
 if (window.innerWidth < 426) siteBrand.innerHTML = "Polytropic"
 window.onresize = function () {
-    if (window.innerWidth < 420) siteBrand.innerHTML = "Polytropic"
+    if (window.innerWidth < 420) siteBrand.innerHTML = "Polytropic HR"
     else siteBrand.innerHTML = "Polytropic HR | Consultancy"
 }
