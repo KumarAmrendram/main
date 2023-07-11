@@ -1,4 +1,7 @@
-*, a, ul, li  {
+*,
+a,
+ul,
+li {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -9,13 +12,9 @@
 
 
 
-
 body {
-    background: rgb(101, 84, 175);
-    background: -moz-radial-gradient(circle, rgba(101, 84, 175, 1) 0%, rgba(233, 102, 160, 1) 50%, rgba(43, 39, 48, 1) 100%);
-    background: -webkit-radial-gradient(circle, rgba(101, 84, 175, 1) 0%, rgba(233, 102, 160, 1) 50%, rgba(43, 39, 48, 1) 100%);
-    background: radial-gradient(circle, rgba(101, 84, 175, 1) 0%, rgba(233, 102, 160, 1) 50%, rgba(43, 39, 48, 1) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#6554af", endColorstr="#2b2730", GradientType=1);
+    background: #fff;
+    /* background: radial-gradient(circle, rgba(244,119,33,1) 0%, rgba(227,7,130,1) 100%); */
 }
 
 section {
@@ -27,11 +26,8 @@ section {
 .flexMain {
     display: flex;
     align-items: center;
-    background: rgb(234, 131, 176);
-    background: -moz-radial-gradient(circle, rgba(234, 131, 176, 1) 0%, rgba(83, 2, 100, 1) 100%);
-    background: -webkit-radial-gradient(circle, rgba(234, 131, 176, 1) 0%, rgba(83, 2, 100, 1) 100%);
-    background: radial-gradient(circle, rgba(234, 131, 176, 1) 0%, rgba(83, 2, 100, 1) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ea83b0", endColorstr="#530264", GradientType=1);
+    background: rgb(244, 119, 33);
+    background: radial-gradient(circle, rgba(244, 119, 33, 1) 0%, rgba(227, 7, 130, 1) 100%);
 }
 
 .flex1 {
@@ -155,7 +151,7 @@ select.noStyle {
 
 .about-section .content-column .text {
     position: relative;
-    color: #ffffff;
+    /* color: #ffffff; */
     font-size: 15px;
     line-height: 2em;
     margin-bottom: 20px;
@@ -316,11 +312,11 @@ select.noStyle {
     font-size: 3rem;
     font-weight: 700;
     text-transform: uppercase;
+    background: -webkit-linear-gradient(#f47721, #e30782);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;   
 }
 
-.site-heading h2 span {
-    color: #00a01d;
-}
 
 .site-heading h4 {
     display: inline-block;
@@ -331,7 +327,7 @@ select.noStyle {
 }
 
 .site-heading h4::before {
-    background: #000 none repeat scroll 0 0;
+    background: #000;
     bottom: 0;
     content: "";
     height: 2px;
@@ -339,6 +335,9 @@ select.noStyle {
     margin-left: -25px;
     position: absolute;
     width: 50px;
+      background: -webkit-linear-gradient(#f47721, #e30782);
+    /* -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;    */
 }
 
 .site-heading {
@@ -558,12 +557,10 @@ select.noStyle {
     background: #ffffff none repeat scroll 0 0;
     border-width: 5px;
     border-style: solid;
-    border-image: 
-    linear-gradient(
-      to bottom, 
-      rgb(162, 42, 176), 
-      rgba(0, 0, 0, 0)
-    ) 1 100%;
+    border-image:
+        linear-gradient(to bottom,
+            rgb(162, 42, 176),
+            rgba(0, 0, 0, 0)) 1 100%;
     -moz-box-shadow: 0 0 10px #cccccc;
     -webkit-box-shadow: 0 0 10px #cccccc;
     -o-box-shadow: 0 0 10px #cccccc;
@@ -577,13 +574,10 @@ select.noStyle {
 .mission.item {
     border-width: 5px;
     border-style: solid;
-    border-image: 
-    linear-gradient(
-      to bottom, 
-      rgba(0, 0, 0, 0),
-      rgb(162, 42, 176) 
-
-    ) 1 100%;
+    border-image:
+        linear-gradient(to bottom,
+            rgba(0, 0, 0, 0),
+            rgb(162, 42, 176)) 1 100%;
 }
 
 .visionMission-section h1 {
@@ -772,11 +766,8 @@ section.contact-us #contact {
     background-color: #fff;
     border-radius: 20px;
     padding: 40px;
-    background: rgb(234, 131, 176);
-    background: -moz-radial-gradient(circle, rgba(234, 131, 176, 1) 0%, rgba(83, 2, 100, 1) 100%);
-    background: -webkit-radial-gradient(circle, rgba(234, 131, 176, 1) 0%, rgba(83, 2, 100, 1) 100%);
-    background: radial-gradient(circle, rgba(234, 131, 176, 1) 0%, rgba(83, 2, 100, 1) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ea83b0", endColorstr="#530264", GradientType=1);
+    background: rgb(244, 119, 33);
+    background: linear-gradient(315deg, rgba(244, 119, 33, 1) 0%, rgba(227, 7, 130, 0.829656862745098) 100%);
 }
 
 section.contact-us #contact h2 {
@@ -822,9 +813,11 @@ section.contact-us #contact textarea {
 
 section.contact-us #contact button {
     font-size: 13px;
-    /* color: #fff; */
-    background: radial-gradient(circle, rgba(249, 38, 130, 1) 0%, rgba(255, 59, 106, 1) 100%);
+    color: #fff;
+    background: linear-gradient(42deg, rgba(244, 119, 33, 1) 0%, rgba(227, 7, 130, 0.829656862745098) 100%);
     padding: 12px 30px;
+    box-shadow: 2px 3px 5px #690b58;
+
     display: inline-block;
     border-radius: 22px;
     font-weight: 500;
@@ -835,7 +828,8 @@ section.contact-us #contact button {
 }
 
 section.contact-us #contact button:hover {
-    opacity: 0.9;
+    opacity: 0.8;
+    scale: 1.05;
 }
 
 section.contact-us .right-info {
@@ -843,14 +837,10 @@ section.contact-us .right-info {
     border-radius: 20px;
     padding: 100px 60px;
     color: #fff;
-    background: rgb(234, 131, 176);
-    background: -moz-radial-gradient(circle, rgba(234, 131, 176, 1) 0%, rgba(83, 2, 100, 1) 100%);
-    background: -webkit-radial-gradient(circle, rgba(234, 131, 176, 1) 0%, rgba(83, 2, 100, 1) 100%);
-    background: radial-gradient(circle, rgba(234, 131, 176, 1) 0%, rgba(83, 2, 100, 1) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ea83b0", endColorstr="#530264", GradientType=1);
+    background: linear-gradient(42deg, rgba(244, 119, 33, 1) 0%, rgba(227, 7, 130, 0.829656862745098) 100%);
 }
 
-@media (max-width:768px){
+@media (max-width:768px) {
     section.contact-us .right-info {
         /* padding: 50px 10px; */
     }
@@ -911,15 +901,15 @@ section.contact-us .right-info ul li span {
     height: 100%;
     /* background-color: rgba(0, 0, 0, 0.5); */
     z-index: 9999;
-  }
+}
 
 
-  #popup-title {
+#popup-title {
     color: red;
     font-weight: 700;
-  }
+}
 
-  #popup-content {
+#popup-content {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -929,34 +919,38 @@ section.contact-us .right-info ul li span {
     border-radius: 5px;
     text-align: center;
     box-shadow: 2px 3px 5px #690b58;
-  }
+}
 
 #popup-content::before {
     content: "";
     position: absolute;
-    inset: -5px; /* control the spread */
-    transform: translate(10px, 8px); /* control the offsets */
-    z-index: -1; /* place the element behind */
+    inset: -5px;
+    /* control the spread */
+    transform: translate(10px, 8px);
+    /* control the offsets */
+    z-index: -1;
+    /* place the element behind */
     /* background: your gradient here; */
-    
-    filter: blur(10px); /* control the blur */
+
+    filter: blur(10px);
+    /* control the blur */
 }
 
 
 #popup:hover {
-    
+    transition: all 0.3s linear;
+    scale: 1.2s;
 }
 
-  #close-icon {
+#close-icon {
     position: absolute;
     top: 10px;
     right: 10px;
     font-size: 20px;
     cursor: pointer;
-  }
+}
 
 .email:hover {
     transition: all 0.3s linear;
     color: #520127;
 }
-
