@@ -32,7 +32,7 @@
       <span id="close-icon">&times;</span>
       <h2 id="popup-title" class=""></h2>
       <p id="popup-message"></p>
-      <button class="btn px-3 py-2 text-white mt-5 mt-sm-0" style="border-radius: 30px; background-color: #690b58"><a href="#contact">Register Now</a></button>
+      <button class="btn px-3 py-2 text-white mt-5 mt-sm-0"><a class="main-button" href="#contact">Register Now</a></button>
     </div>
   </div>
 
@@ -41,13 +41,13 @@
       <div role="navigation" class="sticky-top border-bottom border-top" id="mainNavigation">
         <div class="flexMain">
           <div class="flex2">
-            <button class="whiteLink siteLink text-white" style="border-right: 1px solid #eaeaea"
+            <button class="whiteLink siteLink text-black" style="border-right: 1px solid #eaeaea"
               onclick="menuToggle()">
               <i class="fas fa-bars me-2"></i> MENU
             </button>
           </div>
           <div class="flex3 text-center" id="siteBrand">
-            Polytropic HR | Consultants
+            <a href="#"><img src="./assets/images/hr-cunsultant-logo.png" alt="" srcset=""></a>
           </div>
 
           <div class="flex2 text-end d-block d-md-none">
@@ -63,15 +63,15 @@
       </div>
 
       <div id="menuDrawer">
-        <div class="p-4 border-bottom">
+        <div class="border-bottom">
           <div class="row">
-            <div class="col">Menu</div>
-            <div class="col text-end">
-              <i class="fas fa-times" role="btn" onclick="menuToggle()"></i>
+            <div class="col" id="logo"><img src="./assets/images/hr-cunsultant-logo.png" alt="" ></div>
+            <div class="col text-center ">
+              <i class="fa-solid fa-xmark" role="btn" onclick="menuToggle()"></i>
             </div>
           </div>
         </div>
-        <div>
+        <div class="nav-items">
           <a href="#" class="nav-menu-item"><i class="fas fa-home me-3"></i>Home</a>
           <a href="#about-us" class="nav-menu-item"><i class="fa-solid fa-address-card me-3"></i>About Us</a>
           <a href="#services" class="nav-menu-item"><i class="fas fa-wrench me-3"></i>Services</a>
@@ -410,7 +410,7 @@
                   </div>
                   <div class="col-lg-12">
                     <fieldset>
-                      <button type="submit" id="form-submit" class="button">
+                      <button type="submit" id="form-submit" class="main-button">
                         SEND MESSAGE NOW
                       </button>
                     </fieldset>
