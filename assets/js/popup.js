@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", function() {
     var closeIcon = document.getElementById("close-icon");
     var popupTitle = document.getElementById("popup-title");
     var popupMessage = document.getElementById("popup-message");
-  
+    var section = document.getElementsByTagName("section");
     closeIcon.addEventListener("click", function() {
       popup.style.display = "none";
     });
@@ -19,7 +19,6 @@ document.addEventListener("DOMContentLoaded", function() {
       setTimeout(function() {
         popup.style.display = "block";
       }, 2000);
-  
       // Set the flag to indicate the popup has been shown in the current session
       sessionStorage.setItem("popupShown", "true");
     }

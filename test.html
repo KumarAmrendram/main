@@ -10,32 +10,32 @@
     <input type="file" name="" id="file">
     <img src="" alt="" >
   </form>
-  <script>
-    let url = '';
-    let file = document.getElementById("file");
-    let img = document.querySelector('img');
-    // let pf 
-    file.addEventListener('change', () => {
-      let fr = new FileReader();
-      fr.addEventListener('loadend', () => {
-        let res = fr.result;
-        img.src = res;
-        let spt = res.split('base64,')[1];
-        console.log(spt);
-        let obj = {
-          base64:spt,
-          type:file.files[0].type,
-          name:file.files[0].name
-        }
-        fetch(url, {
-          method:"POST",
-          body:JSON.stringify(obj)
+    <script>
+      let url = 'https://script.google.com/macros/s/AKfycbxUoUAJ7RIXLnvLIOGX2Wt4KJW-EtdUGfS7cEkDF0YKFIPymQSeDG-CrV83sbMXD2g/exec';
+      let file = document.getElementById("file");
+      let img = document.querySelector('img');
+      // let pf 
+      file.addEventListener('change', () => {
+        let fr = new FileReader();
+        fr.addEventListener('loadend', () => {
+          let res = fr.result;
+          img.src = res;
+          let spt = res.split('base64,')[1];
+          console.log(spt);
+          let obj = {
+            base64:spt,
+            type:file.files[0].type,
+            name:file.files[0].name
+          }
+          fetch(url, {
+            method:"POST",
+            body:JSON.stringify(obj)
+          })
+          .then(r=>r.text())
+          .then(data=>console.log(data))
         })
-        .then(r=>r.text())
-        .then(data=>console.log(data))
+        fr.readAsDataURL(file.files[0])
       })
-      fr.readAsDataURL(file.files[0])
-    })
-  </script>
+    </script>
 </body>
 </html>

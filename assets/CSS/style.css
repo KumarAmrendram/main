@@ -22,9 +22,15 @@ section {
 
 #logo img {
     position: absolute;
-    margin: 1rem 0 0 2rem;
+    margin: 1rem 0 0 5rem;
     width: 100px;
     height: 70px;
+}
+
+@media (max-width: 768px) {
+    #logo img {
+    margin: 1rem 0 0 3rem;
+    }
 }
 
 .main-button {
@@ -43,6 +49,11 @@ section {
     transition: all 0.3s;
     border: none;
     outline: none;
+}
+
+.main-button a:hover {
+    color: #fff;
+    font-weight: bold;
 }
 
 .flexMain {
@@ -79,6 +90,10 @@ button.siteLink {
 .whiteLink:active {
     background: #fff;
     color: #d92b7c;
+}
+
+.whiteLink span {
+    font-size: 1rem;
 }
 
 .blackLink {
@@ -125,7 +140,7 @@ button.siteLink {
 }
 
 #menuDrawer .nav-items {
-    margin-top: 4.5rem;
+    margin-top: 4.8rem;
 }
 
 #menuDrawer i {
@@ -851,8 +866,12 @@ section.contact-us .right-info {
 }
 
 @media (max-width: 768px) {
-    section.contact-us .right-info {
-        /* padding: 50px 10px; */
+    .hide {
+        display: none;
+
+    }
+    .whiteLink i {
+        font-size: 1.5rem;
     }
 }
 
@@ -979,4 +998,39 @@ section.contact-us .right-info ul li span {
 .email:hover {
     transition: all 0.3s linear;
     color: #520127;
+}
+
+/* social icons  */
+.social-icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+.icons ul li a{
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: 40px;
+    padding: 5px;
+    /* border-radius: 50%; */
+    font-size: 60px;
+    color: #000;
+    transition: 0.5s ease;
+}
+
+.icons ul li a:hover{
+    font-size: 50px;
+    opacity: 0.7;
+    /* box-shadow: 0 0 4px #ff01e1; */
+    scale: 0.9;
 }

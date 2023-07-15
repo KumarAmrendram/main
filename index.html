@@ -32,7 +32,7 @@
       <span id="close-icon">&times;</span>
       <h2 id="popup-title" class=""></h2>
       <p id="popup-message"></p>
-      <button class="btn px-3 py-2 text-white mt-5 mt-sm-0"><a href="#contact">Register Now</a></button>
+      <button class="btn px-3 py-2 text-white mt-5 mt-sm-0 main-button"><a href="#contact">Register Now</a></button>
     </div>
   </div>
 
@@ -43,7 +43,7 @@
           <div class="flex2">
             <button class="whiteLink siteLink text-black" style="border-right: 1px solid #eaeaea"
               onclick="menuToggle()">
-              <i class="fas fa-bars me-2"></i> MENU
+              <i class="fas fa-bars me-2"></i> <span class="hide">MENU</span>
             </button>
           </div>
           <div class="flex3 text-center" id="siteBrand">
@@ -55,9 +55,27 @@
           </div>
 
           <div class="flex2 text-end d-none d-md-block">
-            <button class="blackLink siteLink">
-              <a href="#contact">Join Us</a>
-            </button>
+            <div class="social-icons blackLink siteLink">
+              <div class="icons">
+                <ul>
+                    <li>
+                        <a href=""><ion-icon name="logo-facebook"></ion-icon></a>
+                    </li>
+                    <li>
+                        <a href=""><ion-icon name="logo-instagram"></ion-icon></a>
+                    </li>
+                    <li>
+                      <a href=""><ion-icon name="logo-twitter"></ion-icon></a>
+                  </li>
+                    <li>
+                        <a href=""><ion-icon name="mail-outline"></ion-icon></a>
+                    </li>
+                </ul>
+            </div>
+        
+            <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+            <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+            </div>
           </div>
         </div>
       </div>
@@ -66,7 +84,7 @@
         <div class="border-bottom">
           <div class="row">
             <div class="col" id="logo"><img src="./assets/images/hr-cunsultant-logo.png" alt="" ></div>
-            <div class="col text-center ">
+            <div class="col text-center" style="cursor: pointer;">
               <i class="fa-solid fa-xmark" role="btn" onclick="menuToggle()"></i>
             </div>
           </div>

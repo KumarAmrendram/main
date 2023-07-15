@@ -4,10 +4,10 @@ function menuToggle() {
   if (menuHolder.className === "drawMenu") menuHolder.className = "";
   else menuHolder.className = "drawMenu";
 }
-if (window.innerWidth < 426) siteBrand.innerHTML = "Polytropic";
+if (window.innerWidth < 426) siteBrand.innerHTML = "<img style='width:90px; height:50px;margin-left:2rem' src='./assets/images/hr-cunsultant-logo.png'>";
 window.onresize = function () {
-  if (window.innerWidth < 420) siteBrand.innerHTML = "Polytropic HR";
-  else siteBrand.innerHTML = "Polytropic HR | Consultancy";
+  if (window.innerWidth < 420) siteBrand.innerHTML = "<img style='width:70px; height:40px;margin-left:2rem' src='./assets/images/hr-cunsultant-logo.png'>";
+  else siteBrand.innerHTML = "<img src='./assets/images/hr-cunsultant-logo.png' >";
 };
 
 //  from
