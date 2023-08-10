@@ -249,7 +249,6 @@ select.noStyle {
     bottom: -50px;
     width: 299px;
     height: 299px;
-    background: url(img/pattern-2.png) no-repeat;
 }
 
 .about-section .image-column .inner-column .image img {
@@ -297,7 +296,6 @@ select.noStyle {
     z-index: -1;
     right: -10px;
     bottom: -10px;
-    background: url(https://i.ibb.co/DKn55Qz/pattern-1.jpg) repeat;
 }
 
 .about-section .btn-style-three:hover {
@@ -857,8 +855,10 @@ section.contact-us #contact button:hover {
 }
 
 section.contact-us .right-info {
+    display: flex;
+    flex-direction: column;
     border-radius: 20px;
-    padding: 100px 60px;
+    padding: 70px 50px;
     color: #fff;
     background: linear-gradient(42deg,
             rgba(244, 119, 33, 1) 0%,
@@ -868,7 +868,6 @@ section.contact-us .right-info {
 @media (max-width: 768px) {
     .hide {
         display: none;
-
     }
     .whiteLink i {
         font-size: 1.5rem;
@@ -878,7 +877,7 @@ section.contact-us .right-info {
 @media (max-width: 600px) {
     section.contact-us .right-info {
         border-radius: 20px;
-        padding: 30px 10px;
+        padding: 10px 10px;
         margin-top: 2rem;
         color: #fff;
     }
@@ -909,9 +908,9 @@ section.contact-us .right-info ul li:last-child {
 
 section.contact-us .right-info ul li h6 {
     /* color: #fff; */
-    font-size: 15px;
+    font-size: 0.7rem;
     font-weight: 600;
-    margin-bottom: 10px;
+    /* margin-bottom: 10px; */
 }
 
 section.contact-us .right-info ul li span {
