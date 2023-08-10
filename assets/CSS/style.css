@@ -801,8 +801,9 @@ ul {
 }
 
 section.contact-us {
-  margin: 0 9%;
+    padding-left: 20%;
   color: #000;
+  overflow: hidden;
 }
 
 section.contact-us #contact {
