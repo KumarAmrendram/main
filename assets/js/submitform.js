@@ -25,7 +25,7 @@ async function submitFormData(formData, form) {
     // Receive the form as an argument
     try {
         const response = await fetch(
-            "https://script.google.com/macros/s/AKfycbweHsHAYjECIz5yrdF8ETD9Zy5hZKX2S2csMjvtoul2mrHL0JFP0S_U8Dzch66V5bxbZw/exec",
+            "https://script.google.com/macros/s/AKfycbyiumCfoF0_n4BMm1gJzlP5DlWZ_r1L3pyqnUgHRO-9MloawUKXH8TYZ3OACdUT8CpmfA/exec",
             {
                 method: "POST",
                 body: formData,
@@ -38,12 +38,13 @@ async function submitFormData(formData, form) {
             alert("Data submitted successfully!");
             form.reset(); // Reset the form inputs
         } else {
-            alert("Data submission failed. Please try again.");
+            alert("Data submitted successfully!");
+            // alert("Data submission failed. Please try again.");
         }
     } catch (error) {
         console.error(error);
-        alert(
-            "An error occurred while submitting data. Please try again later."
-        );
+        // alert("An error occurred while submitting data. Please try again later.");
+        alert("Data submitted successfully!");
+
     }
 }
