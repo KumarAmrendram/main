@@ -25,7 +25,7 @@ async function submitFormData(formData, form) {
   // Receive the form as an argument
   try {
     const response = await fetch(
-      "https://script.google.com/macros/s/AKfycbyiumCfoF0_n4BMm1gJzlP5DlWZ_r1L3pyqnUgHRO-9MloawUKXH8TYZ3OACdUT8CpmfA/exec",
+      "https://script.google.com/macros/s/AKfycby5LjVr2mjKCkRKRaJfGgFCDhAKQv1CBQmHqaAHIwKDBrnnsyhaUJ5_zuEHERTr8rha6w/exec",
       {
         method: "POST",
         body: formData,
