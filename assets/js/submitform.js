@@ -38,13 +38,12 @@ async function submitFormData(formData, form) {
             alert("Data submitted successfully!");
             form.reset(); // Reset the form inputs
         } else {
-            alert("Data submitted successfully!");
-            // alert("Data submission failed. Please try again.");
+            alert("Data submission failed. Please try again.");
         }
+        location.reload(); // Reload the page
     } catch (error) {
         console.error(error);
-        // alert("An error occurred while submitting data. Please try again later.");
-        alert("Data submitted successfully!");
-
+        alert("An error occurred while submitting data. Please try again later.");
+        location.reload(); // Reload the page
     }
 }
