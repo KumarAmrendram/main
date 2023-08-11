@@ -1,519 +1,402 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <!-- Bootstrap CSS -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
-      crossorigin="anonymous"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;600&display=swap"
-      rel="stylesheet"
-    />
-    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <link rel="stylesheet" href="./assets/CSS/style.css" />
-    <script src="./assets//js/popup.js"></script>
-    <link
-      rel="shortcut icon"
-      href="./assets/images/favicon.ico"
-      type="image/x-icon"
-    />
-    <title>Polytropic HR | Consultants</title>
-  </head>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;600&display=swap"
+    rel="stylesheet" />
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
 
-  <body>
-    <div id="popup">
-      <div id="popup-content">
-        <span id="close-icon">&times;</span>
-        <h2 id="popup-title" class=""></h2>
-        <p id="popup-message"></p>
-        <button class="btn px-3 py-2 text-white mt-5 mt-sm-0 main-button">
-          <a href="#contact">Register Now</a>
-        </button>
+  <link rel="stylesheet" href="./assets/CSS/style.css" />
+  <script src="./assets//js/popup.js"></script>
+  <link rel="shortcut icon" href="./assets/images/favicon.ico" type="image/x-icon" />
+  <title>Polytropic HR | Consultants</title>
+</head>
+
+<body>
+  <div id="popup">
+    <div id="popup-content">
+      <span id="close-icon">&times;</span>
+      <h2 id="popup-title" class=""></h2>
+      <p id="popup-message"></p>
+      <button class="btn px-3 py-2 text-white mt-5 mt-sm-0 main-button">
+        <a href="#contact">Register Now</a>
+      </button>
+    </div>
+  </div>
+
+  <section class="banner-section">
+    <div id="menuHolder">
+      <div role="navigation" class="sticky-top border-bottom border-top" id="mainNavigation">
+        <div class="flexMain">
+          <div class="flex2">
+            <button class="whiteLink siteLink text-black" style="border-right: 1px solid #eaeaea"
+              onclick="menuToggle()">
+              <i class="fas fa-bars me-2"></i> <span class="hide">MENU</span>
+            </button>
+          </div>
+          <div class="flex3 text-center" id="siteBrand">
+            <a href="#"><img src="./assets/images/hr-cunsultant-logo.png" alt="" srcset="" /></a>
+          </div>
+
+          <div class="flex2 text-end d-block d-md-none">
+            <button class="whiteLink siteLink"></button>
+          </div>
+
+          <div class="flex2 text-end d-none d-md-block">
+            <div class="social-icons blackLink siteLink">
+              <div class="icons">
+                <ul>
+                  <li>
+                    <a href=""><ion-icon name="logo-facebook"></ion-icon></a>
+                  </li>
+                  <li>
+                    <a href=""><ion-icon name="logo-instagram"></ion-icon></a>
+                  </li>
+                  <li>
+                    <a href=""><ion-icon name="mail-outline"></ion-icon></a>
+                  </li>
+                </ul>
+              </div>
+
+              <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+              <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="menuDrawer">
+        <div class="border-bottom">
+          <div class="row">
+            <div class="col" id="logo">
+              <img src="./assets/images/hr-cunsultant-logo.png" alt="" />
+            </div>
+            <div class="col text-center" style="cursor: pointer">
+              <i class="fa-solid fa-xmark" role="btn" onclick="menuToggle()"></i>
+            </div>
+          </div>
+        </div>
+        <div class="nav-items">
+          <a href="#" class="nav-menu-item"><i class="fas fa-home me-3"></i>Home</a>
+          <a href="#about-us" class="nav-menu-item"><i class="fa-solid fa-address-card me-3"></i>About Us</a>
+          <a href="#services" class="nav-menu-item"><i class="fas fa-wrench me-3"></i>Services</a>
+          <a href="#VisionAndMission" class="nav-menu-item"><i class="fa-solid fa-arrow-up-right-dots me-3"></i>Our
+            Vision</a>
+          <a href="#our-team" class="nav-menu-item"><i class="fa-solid fa-people-group me-3"></i>Our Team</a>
+          <a href="#contact" class="nav-menu-item"><i class="fa-solid fa-address-card me-3"></i>Register</a>
+        </div>
       </div>
     </div>
 
-    <section class="banner-section">
-      <div id="menuHolder">
-        <div
-          role="navigation"
-          class="sticky-top border-bottom border-top"
-          id="mainNavigation"
-        >
-          <div class="flexMain">
-            <div class="flex2">
-              <button
-                class="whiteLink siteLink text-black"
-                style="border-right: 1px solid #eaeaea"
-                onclick="menuToggle()"
-              >
-                <i class="fas fa-bars me-2"></i> <span class="hide">MENU</span>
-              </button>
-            </div>
-            <div class="flex3 text-center" id="siteBrand">
-              <a href="#"
-                ><img
-                  src="./assets/images/hr-cunsultant-logo.png"
-                  alt=""
-                  srcset=""
-              /></a>
-            </div>
+    <!-- HERO SECTION -->
 
-            <div class="flex2 text-end d-block d-md-none">
-              <button class="whiteLink siteLink"></button>
-            </div>
-
-            <div class="flex2 text-end d-none d-md-block">
-              <div class="social-icons blackLink siteLink">
-                <div class="icons">
-                  <ul>
-                    <li>
-                      <a href=""><ion-icon name="logo-facebook"></ion-icon></a>
-                    </li>
-                    <li>
-                      <a href=""><ion-icon name="logo-instagram"></ion-icon></a>
-                    </li>
-                    <li>
-                      <a href=""><ion-icon name="logo-twitter"></ion-icon></a>
-                    </li>
-                    <li>
-                      <a href=""><ion-icon name="mail-outline"></ion-icon></a>
-                    </li>
-                  </ul>
-                </div>
-
-                <script
-                  type="module"
-                  src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
-                ></script>
-                <script
-                  nomodule
-                  src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
-                ></script>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div id="menuDrawer">
-          <div class="border-bottom">
-            <div class="row">
-              <div class="col" id="logo">
-                <img src="./assets/images/hr-cunsultant-logo.png" alt="" />
-              </div>
-              <div class="col text-center" style="cursor: pointer">
-                <i
-                  class="fa-solid fa-xmark"
-                  role="btn"
-                  onclick="menuToggle()"
-                ></i>
-              </div>
-            </div>
-          </div>
-          <div class="nav-items">
-            <a href="#" class="nav-menu-item"
-              ><i class="fas fa-home me-3"></i>Home</a
-            >
-            <a href="#about-us" class="nav-menu-item"
-              ><i class="fa-solid fa-address-card me-3"></i>About Us</a
-            >
-            <a href="#services" class="nav-menu-item"
-              ><i class="fas fa-wrench me-3"></i>Services</a
-            >
-            <a href="#VisionAndMission" class="nav-menu-item"
-              ><i class="fa-solid fa-arrow-up-right-dots me-3"></i>Our Vision</a
-            >
-            <a href="#our-team" class="nav-menu-item"
-              ><i class="fa-solid fa-people-group me-3"></i>Our Team</a
-            >
-            <a href="#contact" class="nav-menu-item"
-              ><i class="fa-solid fa-address-card me-3"></i>Register</a
-            >
-          </div>
-        </div>
-      </div>
-
-      <!-- HERO SECTION -->
-
-      <div
-        style="
+    <div style="
           height: 100vh;
           background-image: url(https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2850&q=80);
           background-size: cover;
           background-position: center;
-        "
-        class="position-relative w-100"
-      >
-        <div
-          class="position-absolute text-white d-flex flex-column align-items-start justify-content-center"
-          style="
+        " class="position-relative w-100">
+      <div class="position-absolute text-white d-flex flex-column align-items-start justify-content-center" style="
             top: 0;
             right: 0;
             bottom: 0;
             left: 0;
             background-color: rgba(0, 0, 0, 0.7);
-          "
-        >
-          <div class="container">
-            <div class="col-md-6">
-              <span style="color: #e7e3e3" class="text-uppercase"
-                >We Are An</span
-              >
-              <!-- on small screens remove display-4 -->
-              <h1 class="mb-4 mt-2 display-4 font-weight-bold">
-                <span style="color: #fff; font-weight: 800"
-                  >Executive Search Firm</span
-                >
-              </h1>
-              <p style="color: #e7e3e3">
-                Matching the right talent to the right job
-              </p>
-              <div class="mt-5">
-                <!-- hover background-color: white; color: black; -->
-                <a
-                  href="#contact"
-                  class="btn px-5 py-3 text-white mt-3 mt-sm-0 main-button"
-                  >Register Now</a
-                >
-              </div>
+          ">
+        <div class="container">
+          <div class="col-md-6">
+            <span style="color: #e7e3e3" class="text-uppercase">We Are An</span>
+            <!-- on small screens remove display-4 -->
+            <h1 class="mb-4 mt-2 display-4 font-weight-bold">
+              <span style="color: #fff; font-weight: 800">Manpower Solution Provider</span>
+            </h1>
+            <p style="color: #e7e3e3">
+              Matching the right talent to the right job
+            </p>
+            <div class="mt-5">
+              <!-- hover background-color: white; color: black; -->
+              <a href="#contact" class="btn px-5 py-3 text-white mt-3 mt-sm-0 main-button">Register Now</a>
             </div>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- Starts about section -->
-    <section class="about-section" id="about-us">
-      <div class="container">
-        <div class="row clearfix">
-          <!--Content Column-->
-          <div class="content-column col-md-6 col-sm-12 col-xs-12">
-            <div class="">
-              <div class="sec-title site-heading">
-                <div class="title">
-                  <h1>About Us</h1>
-                </div>
+  <!-- Starts about section -->
+  <section class="about-section" id="about-us">
+    <div class="container">
+      <div class="row clearfix">
+        <!--Content Column-->
+        <div class="content-column col-md-6 col-sm-12 col-xs-12">
+          <div class="">
+            <div class="sec-title site-heading">
+              <div class="title">
+                <h1>About Us</h1>
               </div>
-              <div class="text">
-                We are pleased to introduce ourselves as a result oriented
-                consultants a complete HR Solutions company that specializes in
-                the Recruitment Solutions across all verticals. We are a young
-                and dynamic firm core expertise in fulfilling any kind of
-                recruitment & staffing requirement. We are having best
-                recruiters with having expertise in their area like IT, Non IT,
-                BPO, Retail sectors. It is an organization committed to
-                rendering services in the areas of Human Resource Management
-                conceived with a vision to reach out to individuals and to make
-                a difference in quality of their lives, as we found that most
-                individuals had a lot going for them. We have Comprises a team
-                of professionals, who are self-driven, trained & having an
-                attitude of continuous learning. They have extensive firsthand
-                experience of working in leading private, public and
-                multinational organizations for several years.
-              </div>
-              <div class="email">
-                <!-- Request Quote:
+            </div>
+            <div class="text">
+              We are pleased to introduce ourselves as a result oriented
+              consultants a complete HR Solutions company that specializes in
+              the Recruitment Solutions across all verticals. We are a young
+              and dynamic firm core expertise in fulfilling any kind of
+              recruitment & staffing requirement. We are having best
+              recruiters with having expertise in their area like IT, Non IT,
+              BPO, Retail sectors. It is an organization committed to
+              rendering services in the areas of Human Resource Management
+              conceived with a vision to reach out to individuals and to make
+              a difference in quality of their lives, as we found that most
+              individuals had a lot going for them. We have Comprises a team
+              of professionals, who are self-driven, trained & having an
+              attitude of continuous learning. They have extensive firsthand
+              experience of working in leading private, public and
+              multinational organizations for several years.
+            </div>
+            <div class="email">
+              <!-- Request Quote:
                   <span class="theme_color">freequote@gmail.com</span> -->
-              </div>
-              <!-- <a href="about.html" class="theme-btn btn-style-three"
+            </div>
+            <!-- <a href="about.html" class="theme-btn btn-style-three"
                   >Read More</a
                 > -->
-            </div>
           </div>
+        </div>
 
-          <!--Image Column-->
-          <div class="image-column col-md-6 col-sm-12 col-xs-12">
-            <div
-              class="inner-column"
-              data-wow-delay="0ms"
-              data-wow-duration="1500ms"
-            >
-              <div class="image">
-                <img src="./assets/images/about-us.jpg" alt="" />
-                <div class="overlay-box">
-                  <div class="year-box">
-                    <span class="number">3<sup>+</sup></span
-                    >Years <br />
-                    Experience <br />
-                    Working
-                  </div>
+        <!--Image Column-->
+        <div class="image-column col-md-6 col-sm-12 col-xs-12">
+          <div class="inner-column" data-wow-delay="0ms" data-wow-duration="1500ms">
+            <div class="image">
+              <img src="./assets/images/about-us.jpg" alt="" />
+              <div class="overlay-box">
+                <div class="year-box">
+                  <span class="number">3<sup>+</sup></span>Years <br />
+                  Experience <br />
+                  Working
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </section>
-    <!-- Ends about section -->
+    </div>
+  </section>
+  <!-- Ends about section -->
 
-    <!-- Starts Services section -->
+  <!-- Starts Services section -->
 
-    <section class="we-offer-area text-center bg-gray" id="services">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <div class="site-heading text-center">
-              <h1>Services</h1>
-              <h4>Main Services offered by us</h4>
-            </div>
+  <section class="we-offer-area text-center bg-gray" id="services">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="site-heading text-center">
+            <h1>Services</h1>
+            <h4>Main Services offered by us</h4>
           </div>
         </div>
-        <div class="row our-offer-items less-carousel">
-          <!-- Single Item -->
-          <div class="col-md-6 col-sm-6 equal-height">
-            <div class="item">
-              <i class="fas fa-pen-fancy"></i>
-              <h4>Permanent Staffing</h4>
-              <p>
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry.
-              </p>
-            </div>
+      </div>
+      <div class="row our-offer-items less-carousel">
+        <!-- Single Item -->
+        <div class="col-md-4 col-sm-6 equal-height">
+          <div class="item">
+            <i class="fas fa-pen-fancy"></i>
+            <h4>Permanent Staffing</h4>
+            <p>
+            </p>
           </div>
-          <!-- End Single Item -->
+        </div>
+        <!-- End Single Item -->
 
-          <!-- Single Item -->
-          <div class="col-md-6 col-sm-6 equal-height">
-            <div class="item">
-              <i class="fas fa-dharmachakra"></i>
-              <h4>Contract To Hire</h4>
-              <p>
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry.
-              </p>
-            </div>
+        <!-- Single Item -->
+        <div class="col-md-4 col-sm-6 equal-height">
+          <div class="item">
+            <i class="fas fa-dharmachakra"></i>
+            <h4>Contract To Hire</h4>
+            <p>
+            </p>
           </div>
-          <!-- End Single Item -->
         </div>
+        <!-- End Single Item -->
+
+        <!-- Single Item -->
+        <div class="col-md-4 col-sm-6 equal-height mx-auto">
+          <div class="item">
+            <i class="fas fa-pen-fancy"></i>
+            <h4>Recruitment Solutions</h4>
+            <p>
+            </p>
+          </div>
+        </div>
+        <!-- End Single Item -->
+
       </div>
-    </section>
-    <!-- ends services section -->
+    </div>
+  </section>
+  <!-- ends services section -->
 
-    <!-- Starts Vision and Mission Section -->
-    <section class="visionMission-section" id="VisionAndMission">
-      <div class="vision">
-        <div class="vision item">
-          <h1 class="text">Vision</h1>
-          <p>
-            Our vision is to be the most trusted workforce solution provider,
-            bridging the gap between clients and top talents. We have a team of
-            skilled professionals, fostering a business ecosystem for consistent
-            yield. Our goal is to delight all stakeholders and help customers
-            achieve their business objectives through innovative consulting. We
-            aim to be a high-growth global provider, empowering security
-            services through innovation and intelligence.
-          </p>
-        </div>
-        <div class="mission text-end item mt-3">
-          <h1 class="text-right">Mission</h1>
-          <p>
-            At our core, we specialize in the design, construction, attraction,
-            and ignition of talent. Our primary focus is connecting individuals
-            with valuable job opportunities, facilitating the process of finding
-            the ideal employees for corporate organizations. By leveraging our
-            expertise, we assist companies in securing the perfect candidates
-            who align with their organizational objectives and culture. Our
-            comprehensive approach encompasses various strategies to ensure that
-            the right talent is not only identified but also effectively
-            integrated into the workforce.
-          </p>
-        </div>
+  <!-- Starts Vision and Mission Section -->
+  <section class="visionMission-section" id="VisionAndMission">
+    <div class="vision">
+      <div class="vision item">
+        <h1 class="text">Vision</h1>
+        <p>
+          Our vision is to be the most trusted workforce solution provider,
+          bridging the gap between clients and top talents. We have a team of
+          skilled professionals, fostering a business ecosystem for consistent
+          yield. Our goal is to delight all stakeholders and help customers
+          achieve their business objectives through innovative consulting. We
+          aim to be a high-growth global provider, empowering security
+          services through innovation and intelligence.
+        </p>
       </div>
-    </section>
-    <!-- Ends Vision and Mission Section -->
-
-    <!-- Starts team section -->
-    <section class="our-team padding-lg" id="our-team">
-      <div class="container">
-        <div class="row site-heading text-center heading-icon">
-          <h1>Our Team</h1>
-        </div>
-        <ul class="row d-flex justify-content-center">
-          <li class="col-8 col-md-6 col-lg-3">
-            <div class="cnt-block equal-hight" style="height: 349px">
-              <figure>
-                <img
-                  src="./assets/images/VirendarPalSingh.png"
-                  class="img-responsive"
-                  alt="Virendar Par Singh | Director"
-                />
-              </figure>
-              <h3><a href="#">Virender Pal Singh</a></h3>
-              <p><b>Director</b></p>
-            </div>
-          </li>
-          <li class="col-8 col-md-6 col-lg-3">
-            <div class="cnt-block equal-hight" style="height: 349px">
-              <figure>
-                <img
-                  src="./assets/images/HarmeetSingh.png"
-                  class="img-responsive"
-                  alt="Harmeet Singh | Director"
-                />
-              </figure>
-              <h3><a href="#">Harmeet Singh</a></h3>
-              <p><b>Director</b></p>
-
-              <p>
-                2+ years of experience in non IT and 3+ years of experience in
-                IT Sector.
-              </p>
-            </div>
-          </li>
-
-          <li class="col-8 col-md-6 col-lg-3">
-            <div class="cnt-block equal-hight" style="height: 349px">
-              <figure>
-                <img
-                  src="./assets/images/KartikSharma.png"
-                  class="img-responsive"
-                  alt="Kartik Sharma | Senior HR Executive"
-                />
-              </figure>
-              <h3><a href="#">Kartik Sharma</a></h3>
-              <p><b>Assistant Manager</b></p>
-              <p>
-                2+ years of experience in Business Process Outsourcing(BPO)
-                Sector
-              </p>
-            </div>
-          </li>
-          <li class="col-8 col-md-6 col-lg-3">
-            <div class="cnt-block equal-hight" style="height: 349px">
-              <figure>
-                <img
-                  src="./assets/images/PrachiPandey.png"
-                  class="img-responsive"
-                  alt="Prachi Pandey | HR Executive"
-                />
-              </figure>
-              <h3><a href="#">Prachi Pandey</a></h3>
-              <p><b>Assistant Manager</b></p>
-              <p>
-                1.5 years of recruitment experience in Retail, Entertainment,
-                Textile & Apparel
-              </p>
-            </div>
-          </li>
-        </ul>
+      <div class="mission text-end item mt-3">
+        <h1 class="text-right">Mission</h1>
+        <p>
+          At our core, we specialize in the design, construction, attraction,
+          and ignition of talent. Our primary focus is connecting individuals
+          with valuable job opportunities, facilitating the process of finding
+          the ideal employees for corporate organizations. By leveraging our
+          expertise, we assist companies in securing the perfect candidates
+          who align with their organizational objectives and culture. Our
+          comprehensive approach encompasses various strategies to ensure that
+          the right talent is not only identified but also effectively
+          integrated into the workforce.
+        </p>
       </div>
-    </section>
-    <!-- Ends team section -->
+    </div>
+  </section>
+  <!-- Ends Vision and Mission Section -->
 
-    <!-- Starts Contact us Section -->
-    <section class="contact-us container-fluid">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-9 align-self-center">
-            <div class="row">
-              <div class="col-lg-12">
-                <form id="contact" method="post" enctype="multipart/form-data">
-                  <div class="row">
-                    <div class="col-lg-12">
-                      <h2 class="text-white">Let's get in touch</h2>
-                    </div>
-                    <div class="col-lg-4">
-                      <fieldset>
-                        <input
-                          name="name"
-                          type="text"
-                          id="name"
-                          placeholder="YOUR NAME...*"
-                          required=""
-                        />
-                      </fieldset>
-                    </div>
-                    <div class="col-lg-4">
-                      <fieldset>
-                        <input
-                          name="phone"
-                          type="text"
-                          id="phone"
-                          placeholder="YOUR PHONE...*"
-                          required=""
-                        />
-                      </fieldset>
-                    </div>
-                    <div class="col-lg-4">
-                      <fieldset>
-                        <input
-                          name="profile"
-                          type="text"
-                          id="profile"
-                          placeholder="PROFILE...*"
-                          required=""
-                        />
-                      </fieldset>
-                    </div>
-                    <div class="col-lg-3">
-                      <fieldset>
-                        <input
-                          name="location"
-                          type="text"
-                          id="crnt-location"
-                          placeholder="CURRENT LOCATION...*"
-                          required=""
-                        />
-                      </fieldset>
-                    </div>
-                    <div class="col-lg-3">
-                      <fieldset>
-                        <input
-                          name="ctc"
-                          type="text"
-                          id="ctc"
-                          placeholder="EXPECTED/CURRENT CTC...*"
-                          required=""
-                        />
-                      </fieldset>
-                    </div>
-                    <div class="col-lg-3">
-                      <fieldset>
-                        <input
-                          name="notice"
-                          type="text"
-                          id="notice-period"
-                          placeholder="NOTICE PERIOD...*"
-                          required=""
-                        />
-                      </fieldset>
-                    </div>
-                    <div class="col-lg-3">
-                      <fieldset>
-                        <div class="button-container">
-                          <button>Resume</button>
-                          <input
-                            name="resume"
-                            type="file"
-                            id="pdfFile"
-                            placeholder="RESUME...*"
-                            required=""
-                            accept=".pdf"
-                          />
-                        </div>
-                      </fieldset>
-                    </div>
-                    <!-- <div class="col-lg-12">
+  <!-- Starts team section -->
+  <section class="our-team padding-lg" id="our-team">
+    <div class="container">
+      <div class="row site-heading text-center heading-icon">
+        <h1>Our Team</h1>
+      </div>
+      <ul class="row d-flex justify-content-center">
+        <li class="col-8 col-md-6 col-lg-3">
+          <div class="cnt-block equal-hight" style="height: 349px">
+            <figure>
+              <img src="./assets/images/VirendarPalSingh.png" class="img-responsive"
+                alt="Virendar Par Singh | Director" />
+            </figure>
+            <h3><a href="#">Virender Pal Singh</a></h3>
+            <p><b>Director</b></p>
+          </div>
+        </li>
+        <li class="col-8 col-md-6 col-lg-3">
+          <div class="cnt-block equal-hight" style="height: 349px">
+            <figure>
+              <img src="./assets/images/HarmeetSingh.png" class="img-responsive" alt="Harmeet Singh | Director" />
+            </figure>
+            <h3><a href="#">Harmeet Singh</a></h3>
+            <p><b>Director</b></p>
+
+            <p>
+              2+ years of experience in non IT and 3+ years of experience in
+              IT Sector.
+            </p>
+          </div>
+        </li>
+
+        <li class="col-8 col-md-6 col-lg-3">
+          <div class="cnt-block equal-hight" style="height: 349px">
+            <figure>
+              <img src="./assets/images/KartikSharma.png" class="img-responsive"
+                alt="Kartik Sharma | Senior HR Executive" />
+            </figure>
+            <h3><a href="#">Kartik Sharma</a></h3>
+            <p><b>Assistant Manager</b></p>
+            <p>
+              4+ years of experience in Business Process Outsourcing(BPO)
+              and Travel Industry.
+            </p>
+          </div>
+        </li>
+        <li class="col-8 col-md-6 col-lg-3">
+          <div class="cnt-block equal-hight" style="height: 349px">
+            <figure>
+              <img src="./assets/images/PrachiPandey.png" class="img-responsive" alt="Prachi Pandey | HR Executive" />
+            </figure>
+            <h3><a href="#">Prachi Pandey</a></h3>
+            <p><b>Assistant Manager</b></p>
+            <p>
+              3.5 years of experience in Non IT, Retail,
+              Textile & Apparel luxury brands
+            </p>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </section>
+  <!-- Ends team section -->
+
+  <!-- Starts Contact us Section -->
+  <section class="contact-us container-fluid">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-9 align-self-center">
+          <div class="row">
+            <div class="col-lg-12">
+              <form id="contact" method="post" enctype="multipart/form-data">
+                <div class="row">
+                  <div class="col-lg-12">
+                    <h2 class="text-white">Let's get in touch</h2>
+                  </div>
+                  <div class="col-lg-4">
+                    <fieldset>
+                      <input name="name" type="text" id="name" placeholder="YOUR NAME...*" required="" />
+                    </fieldset>
+                  </div>
+                  <div class="col-lg-4">
+                    <fieldset>
+                      <input name="phone" type="text" id="phone" placeholder="YOUR PHONE...*" required="" />
+                    </fieldset>
+                  </div>
+                  <div class="col-lg-4">
+                    <fieldset>
+                      <input name="profile" type="text" id="profile" placeholder="PROFILE...*" required="" />
+                    </fieldset>
+                  </div>
+                  <div class="col-lg-3">
+                    <fieldset>
+                      <input name="location" type="text" id="crnt-location" placeholder="CURRENT LOCATION...*"
+                        required="" />
+                    </fieldset>
+                  </div>
+                  <div class="col-lg-3">
+                    <fieldset>
+                      <input name="ctc" type="text" id="ctc" placeholder="EXPECTED/CURRENT CTC...*" required
+                        style="font-size: 0.71rem;" />
+                    </fieldset>
+                  </div>
+                  <div class="col-lg-3">
+                    <fieldset>
+                      <input name="notice" type="text" id="notice-period" placeholder="NOTICE PERIOD...*" required="" />
+                    </fieldset>
+                  </div>
+                  <div class="col-lg-3">
+                    <fieldset>
+                      <div class="button-container">
+                        <button>Resume</button>
+                        <input name="resume" type="file" id="pdfFile" placeholder="RESUME...*" required style="color: #e7e3e3;"
+                          accept=".pdf" />
+                      </div>
+                    </fieldset>
+                  </div>
+                  <!-- <div class="col-lg-12">
                     <fieldset>
                       <textarea
                         name="msg"
@@ -525,23 +408,19 @@
                       ></textarea>
                     </fieldset>
                   </div> -->
-                    <div class="col-lg-12">
-                      <fieldset>
-                        <button
-                          type="submit"
-                          id="form-submit"
-                          class="main-button"
-                        >
-                          SEND MESSAGE NOW
-                        </button>
-                      </fieldset>
-                    </div>
+                  <div class="col-lg-12">
+                    <fieldset>
+                      <button type="submit" id="form-submit" class="main-button">
+                        SEND MESSAGE NOW
+                      </button>
+                    </fieldset>
                   </div>
-                </form>
-              </div>
+                </div>
+              </form>
             </div>
           </div>
-          <!-- <div class="col-lg-3">
+        </div>
+        <!-- <div class="col-lg-3">
             <div class="right-info" >
               <ul>
                 <li class="item-1">
@@ -567,52 +446,45 @@
               </ul>
             </div>
           </div> -->
-        </div>
       </div>
-    </section>
-    <div class="footer">
-      <P>
-        <span> <i class="fa-solid fa-phone" style="margin: 0.3rem;"></i> <span style="color: #f5259b;">+91 85878 55709</span></span>
-        <span style="font-size: 0.9rem;text-transform: lowercase; margin: 0 0.5rem;"
-        > <i class="fa-solid fa-envelope"></i><a
-          href="mailto:harmeet.polytropichrconsultants@gmail.com"
-          target="_blank"
-          class="email"
-        >
-          harmeet.polytropichrconsultants@gmail.com</a
-        >
-      </span>
-      <span><i class="fa-solid fa-location-dot">address here</i></span>
-      </P>
-
-      <p>
-        Copyright © 2023 Polytropic HR | Consultants Co. Ltd. All Rights
-        Reserved.
-        <br />Design:
-        <span style="color: rgb(47, 154, 154)"
-          ><b><i>techquantic studio </i></b></span
-        >
-      </p>
     </div>
-  
-    <!-- Ends Contact us section -->
+  </section>
+  <div class="footer">
+    <p>
+      <span>
+        <i class="fa-solid fa-phone" style="margin: 0.3rem"></i>
+        <span style="color: #f5259b">+91 85878 55709</span></span>
+      <span style="font-size: 0.9rem; text-transform: lowercase; margin: 0 0.5rem">
+        <i class="fa-solid fa-envelope mx-2"></i><a href="mailto:polytropichrconsultants@gmail.com" target="_blank"
+          class="email">
+          polytropichrconsultants@gmail.com</a>
+      </span>
+      <span><i class="fa-solid fa-location-dot mx-2"></i>E-2/16 Ground Floor, Shastri Nagar, Delhi - 110052</span>
+    </p>
 
-    <script src="./assets/js/script.js"></script>
-    <script src="./assets/js/submitform.js"></script>
+    <p>
+      Copyright © 2023 Polytropic HR | Consultants Co. Ltd. All Rights
+      Reserved.
+      <br />Design:
+      <span style="color: rgb(47, 154, 154)"><b><i>techquantic studio </i></b></span>
+    </p>
+  </div>
 
-    <!-- Bootstrap Bundle with Popper -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-      crossorigin="anonymous"
-    ></script>
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
-    />
+  <!-- Ends Contact us section -->
 
-    <script>
-      console.clear();
-    </script>
-  </body>
+  <script src="./assets/js/script.js"></script>
+  <script src="./assets/js/submitform.js"></script>
+
+  <!-- Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+
+  <script>
+    console.clear();
+  </script>
+</body>
+
 </html>
