@@ -927,6 +927,14 @@ section.contact-us .right-info {
     padding-left: 10px;
   }
 
+  .address-area {
+    display: block;
+    font-size: 0.8rem;
+  }
+
+  .email-area {
+    display: block;
+  }
   section.contact-us .right-info {
     border-radius: 20px;
     padding: 10px 10px;
