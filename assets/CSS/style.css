@@ -737,7 +737,7 @@ ul {
   background: #fff;
   padding: 30px 20px;
   text-align: center;
-  /* border: 2px solid #ff25fb; */
+  border: 2px solid #ff25fb;
   border-radius: 25px;
   margin: 0 0 28px;
   transition: all 0.5s linear;
