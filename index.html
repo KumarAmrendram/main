@@ -590,7 +590,7 @@
       <p class="phone-area">
         <span>
           <i class="fa-solid fa-phone" style="margin: 0.3rem"></i>
-          <span style="color: #f5259b">+91 85878 55709</span>
+          <span style="color: #f5259b"><a href="tel:8587855709">+91 85878 55709</a></span>
         </span>
 
         <span
@@ -608,28 +608,24 @@
         </span>
 
         <span class="address-area"
-          ><i class="fa-solid fa-location-dot mx-2"></i>E-2/16 Ground Floor,
-          Shastri Nagar, Delhi - 110052</span
-        >
+          ><i class="fa-solid fa-location-dot mx-2"></i> <a href="https://www.google.com/maps/place/E2/16,+Block+E2,+Shastri+Nagar,+Delhi,+110007" target="_blank">E-2/16 Ground Floor,
+          Shastri Nagar, Delhi - 110052></a>
+        
+        </span>
       </p>
 
       <p>
-        Copyright © 2023 Polytropic HR | Consultants Co. Ltd. All Rights
+        Copyright © <span id="currentYear"></span> Polytropic HR | Consultants Co. Ltd. All Rights
         Reserved.
-        <br />Design:
-        <span style="color: rgb(47, 154, 154)"
-          ><b><i></i></b
-          ><a
-            href="https://techquantic.in"
-            target="_blank"
-            rel="noopener noreferrer"
-            >techquantic studio
-          </a></span
-        >
       </p>
     </div>
 
     <!-- Ends Contact us section -->
+
+    <script>
+      let d = new Date();
+      document.querySelector("#currentYear").innerText = d.getFullYear();
+    </script>
 
     <script src="./assets/js/script.js"></script>
     <script src="./assets/js/submitform.js"></script>
